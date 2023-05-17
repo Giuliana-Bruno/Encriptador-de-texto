@@ -1,9 +1,10 @@
 * {
     background: #f3f5fc;
     font-family:'Inter';
+    font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
+    line-height: 120%;
     
     
 }
@@ -30,10 +31,11 @@ main {
 
 
 .texto {
-    
+    position: absolute;
     border: none;
     color: #0a3871;
-    margin-top: 90px;
+    margin-top: 168px;
+    left: 240px;
     text-transform: lowercase;
 }
 ::placeholder { color: #0a3871; }
@@ -44,7 +46,10 @@ main {
 
 .botones {
     display: flex;
-    margin-top: 18px;
+    margin-top: 746px;
+    position: absolute;
+    left: 240px;
+    
 }
 
 .btn-desencriptar{
@@ -73,10 +78,14 @@ main {
 .terminos {
     color: #495057;
     font-size: 18px;
+    margin-top: 700px;
+    left: 255px;
+    position: absolute;
 }
 
 .encriptado {
     position: absolute;
+    display: flex;
     width: 30%;
     height: 90%;
     left: 60%;
@@ -88,9 +97,22 @@ main {
 
 .texto-titulo  {
    display: flex;
+   flex-direction: column;
    margin-top: 75%;
    position: absolute;
-    
+   background: #fff;
+   
+}
+.titulo-mensaje {
+    color: #343a40;
+    text-align: center;
+    font-weight: 700;
+    background: #fff;
+} 
+.parrafo {
+    text-align: center;
+    font-weight: 400;
+    background: #fff;
 }
 
 .mensaje {  
@@ -100,7 +122,7 @@ main {
     border: none;
     color: #0a3871;
     margin-left: 98px;
-    margin-top: 20px;
+    margin-top: 32px;
     padding-left: 20px;
     position: fixed; 
 }
@@ -114,7 +136,7 @@ main {
     color: #0a3871;
     cursor: pointer;
     height: 67px;
-    margin-left: -500px;
+    margin-left: 130px;
     margin-top: 702px;
     position: absolute;
     width: 328px;
