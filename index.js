@@ -1,11 +1,18 @@
 const textArea = document.querySelector(".texto");
 const mensaje = document.querySelector(".mensaje");
 
+const textoTitulo = document.querySelector(".texto-titulo");
+const copiar = document.querySelector(".copiar");
+
+
+
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
-    mensaje.style.backgroundImage = "none"
+    mensaje.style.backgroundImage = "none";
+    textoTitulo.style.display = "none";
+    copiar.style.display = "block";
 }
 
 function encriptar(stringEncriptada){
@@ -24,6 +31,8 @@ function btnDesencriptar(){
   const textoEncriptado = desencriptar(textArea.value)
   mensaje.value = textoEncriptado
   textArea.value = "";
+  textoTitulo.style.display = "none";
+  copiar.style.display = "block";
 }
 
 function desencriptar(stringDesencriptada){
@@ -45,7 +54,11 @@ function btnCopiar(){
   navigator.clipboard.writeText(btnCopiar.value);
   alert("texto copiado");
 
-  textoEncriptado.value = ""
+  
+  textoTitulo.style.display = "block";
+  copiar.style.display = "none";
+
+  textoEncriptado.value = "";
 }
 
 

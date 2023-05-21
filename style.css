@@ -1,12 +1,6 @@
 * {
     background: #f3f5fc;
-    font-family:'Inter';
-    font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 120%;
-    
-    
 }
 
 .logo {
@@ -25,8 +19,10 @@
 
 main {
     display: flex;
-    margin-bottom: 100px;
-    margin-left: 80px;
+    font-family:'Inter';
+    font-style: normal;
+    font-size: 32px;
+
 }
 
 
@@ -34,9 +30,10 @@ main {
     position: absolute;
     border: none;
     color: #0a3871;
-    margin-top: 168px;
-    left: 240px;
-    text-transform: lowercase;
+    font-size: 20px;
+    top: 140px;
+    left: 220px;
+   
 }
 ::placeholder { color: #0a3871; }
     .texto:focus {
@@ -46,10 +43,10 @@ main {
 
 .botones {
     display: flex;
-    margin-top: 746px;
+    margin-top: 520px;
     position: absolute;
-    left: 240px;
-    
+    left: 150px;
+
 }
 
 .btn-desencriptar{
@@ -61,6 +58,7 @@ main {
     height: 67px;
     margin-left: 30px;
     width: 328px;
+    font-size: 20px;
 }
 
 .btn-encriptar {
@@ -71,60 +69,75 @@ main {
     cursor: pointer;
     height: 67px;
     width: 328px;
+    font-size: 20px;
 }
 
 
 
 .terminos {
     color: #495057;
-    font-size: 18px;
-    margin-top: 700px;
-    left: 255px;
+    font-size: 15px;
+    margin-top: 490px;
+    left: 165px;
     position: absolute;
 }
 
 .encriptado {
     position: absolute;
     display: flex;
-    width: 30%;
-    height: 90%;
-    left: 60%;
-    top: 5%;
+    width: 400px;
+    height: 580px;
+    left: 900px;
+    top: 35px;
     background: #fff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+    border-radius: 32px;  
 }
 
 .texto-titulo  {
    display: flex;
    flex-direction: column;
-   margin-top: 75%;
+   align-items: flex-start;
    position: absolute;
+   width: 300px;
+   height: 90px;
+   left: 50px;
+   top: 340px;
    background: #fff;
-   
 }
 .titulo-mensaje {
+    font-family: 'inter';
+    font-style: normal;
     color: #343a40;
     text-align: center;
     font-weight: 700;
     background: #fff;
-} 
+    height: 40px;
+    font-size: 24px;
+    line-height: 120%;
+}
 .parrafo {
+    font-family: 'inter';
+    font-style: normal;
+    color: #495057;
     text-align: center;
     font-weight: 400;
     background: #fff;
+    height: 30px;
+    font-size: 16px;
+    line-height: 150%;
 }
 
-.mensaje {  
+.mensaje {
     background: white;
     background-image: url("img/muñeco.png");
     background-repeat: no-repeat;
     border: none;
     color: #0a3871;
-    margin-left: 98px;
-    margin-top: 32px;
-    padding-left: 20px;
-    position: fixed; 
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 300px;
+    font-size: 24px;
 }
 .mensaje:focus {
     outline: none;
@@ -136,8 +149,11 @@ main {
     color: #0a3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 130px;
-    margin-top: 702px;
+    left: 35px; 
+    top: 495px;
     position: absolute;
     width: 328px;
+    font-size: 20px;
+    display: none;
 }
+

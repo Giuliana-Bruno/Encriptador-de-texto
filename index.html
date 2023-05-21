@@ -19,6 +19,7 @@
   <main>
     <section>
       <textarea 
+        id="texto"
         class="texto" 
         cols="30" 
         rows="10" 
@@ -39,13 +40,13 @@
           rows="10" 
           class="mensaje" 
           id="textoEncriptado"
-        ></textarea> 
-        <div class="texto-titulo">
+        ></textarea>  
+        <div class="texto-titulo" id="texto-titulo">
           <h2 class="titulo-mensaje" id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
           <p class="parrafo" id="parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p> 
         </div>     
         <div>
-          <button class="copiar" onclick="btnCopiar()">Copiar</button>
+          <button class="copiar" id="copiar" onclick="btnCopiar()">Copiar</button>
         </div>
     </div>
     </section>
